@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="justify-content-md-center">Calculadora</h1>
+        <div class="form">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md">
+                        <input type="text" class="form-control" id="n1">
+                        <small class="form-text text-muted ">Primeiro Numero</small>
+                    </div>
+                    <div class="col-md">
+                            <input type="text" class="form-control oper" id="operacao" >
+                            <small class="form-text text-muted ">Operação</small>
+                    </div>
+                    <div class="col-md">
+                        <input type="text" class="form-control numeroDois" id="n2" >
+                        <small class="form-text text-muted numeroDois">Segundo Numero</small>
+                    </div>
+                    <div class="col-md">
+                        <label id="resultado"></label>
+                    </div> 
+
+                </div>
+                <div class="row">
+                    <div class="col-md botoes">
+                        <button class="btn btn-dark" onclick="calcular()">Calcular</button>
+                        <button class="btn btn-dark" value="Limpa" onclick="limpar()">Limpar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="./script.js"></script>
+</body>
+</html>
